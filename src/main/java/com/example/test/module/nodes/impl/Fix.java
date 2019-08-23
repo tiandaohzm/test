@@ -1,0 +1,27 @@
+package com.example.test.module.nodes.impl;
+
+import com.example.test.module.entity.Car;
+import com.example.test.module.nodes.AbstractNode;
+import com.example.test.module.retry.Retry;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+@Component
+@Scope("prototype")
+public class Fix extends AbstractNode {
+
+    @Override
+    public void handle(Car car) throws Exception {
+        System.out.println(car.getId() + ":————修车————");
+        try {
+            Thread.sleep(3000L);
+        }catch (Exception e){
+            System.out.println(car.getId() + ":————任务取消————");
+        }
+        if(next != null){
+            next.handle(car);
+        }else {
+            System.out.println(car.getId() + ":————完成维护————");
+        }
+    }
+}

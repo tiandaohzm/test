@@ -1,0 +1,2 @@
+logging:
+  com.example.test.module: debug

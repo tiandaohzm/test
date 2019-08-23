@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <bean id="test" class="com.example.test.module.nodes.impl.Check">
+                <property name="next" ref="fix">
+                </property>
+        </bean>
+</beans>
+<!--<map>-->
+    <!--<entry>-->
+    <!--<string>default</string>-->
+    <!--<list>-->
+        <!--<string>check</string>-->
+        <!--<string>wash</string>-->
+        <!--<string>refuel</string>-->
+    <!--</list>-->
+    <!--</entry>-->
+    <!--<entry>-->
+        <!--<string>2</string>-->
+        <!--<list>-->
+            <!--<map>-->
+                <!--<entry>-->
+                    <!--<string>check</string>-->
+                    <!--<list>-->
+                        <!--<string>fix</string>-->
+                    <!--</list>-->
+                <!--</entry>-->
+            <!--</map>-->
+            <!--<string>fix</string>-->
+            <!--<string>wash</string>-->
+            <!--<string>refuel</string>-->
+        <!--</list>-->
+    <!--</entry>-->
+<!--</map>-->

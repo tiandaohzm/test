@@ -1,0 +1,19 @@
+<map>
+    <entry>
+    <string>default</string>
+    <list>
+        <string>check</string>
+        <string>wash</string>
+        <string>refuel</string>
+    </list>
+    </entry>
+    <entry>
+        <string>2</string>
+        <list>
+            <string>check</string>
+            <string>fix</string>
+            <string>wash</string>
+            <string>refuel</string>
+        </list>
+    </entry>
+</map>
